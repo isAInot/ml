@@ -15,9 +15,9 @@
 
 **后端**
 - Python 3.10
-- Flask (Web框架)
-- Scikit-learn, XGBoost, LightGBM (机器学习)
-- Pandas, NumPy (数据处理)
+- Flask
+- Scikit-learn, XGBoost, LightGBM
+- Pandas, NumPy
 
 **前端**
 - React 18
