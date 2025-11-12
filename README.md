@@ -109,83 +109,6 @@ ml-resume-system/
 └── README.md
 ```
 
-## API文档
-
-### 预测接口
-
-**单条简历预测**
-```
-POST /api/predict/single
-Content-Type: application/json
-
-{
-  "姓名": "张三",
-  "年龄": 25,
-  "学历层次": "本科",
-  "意向岗位": "后端开发工程师",
-  ...
-}
-
-Response:
-{
-  "prediction": "通过",
-  "confidence": 0.85,
-  "probability_pass": 0.85,
-  "probability_fail": 0.15
-}
-```
-
-**批量预测**
-```
-POST /api/predict/batch
-Content-Type: application/json
-
-{
-  "resumes": [...]
-}
-```
-
-### 匹配接口
-
-**岗位匹配推荐**
-```
-POST /api/match/candidates
-Content-Type: application/json
-
-{
-  "position": "后端开发工程师",
-  "education": "本科",
-  "experience_years": 3,
-  "top_n": 10
-}
-
-Response:
-{
-  "candidates": [
-    {
-      "resume_id": 1,
-      "name": "张三",
-      "match_score": 88.5,
-      ...
-    }
-  ]
-}
-```
-
-### 统计接口
-
-- `GET /api/statistics/overview` - 概览统计
-- `GET /api/statistics/skills` - 技能统计
-- `GET /api/statistics/positions` - 岗位统计
-- `GET /api/model/performance` - 模型性能
-
-## 模型性能
-
-- **准确率**: 85-90%
-- **F1分数**: 0.83-0.88
-- **ROC-AUC**: 0.90+
-- **预测响应时间**: <500ms
-
 ## 端口配置
 
 - 前端端口: 3000
@@ -238,10 +161,6 @@ npm run dev
    - 在"人才匹配"页面输入岗位需求获取推荐
    - 在"数据看板"查看统计分析
    - 在"简历库"浏览和管理简历
-
-## 开发团队
-
-GitHub Copilot AI Assistant
 
 ## 许可证
 
