@@ -17,7 +17,7 @@ def main():
     
     # 加载数据
     print("\n加载数据...")
-    data_path = os.path.join(os.path.dirname(__file__), '..', '..', 'Chinese_resume_data.csv')
+    data_path = os.path.join(os.path.dirname(__file__), '..', 'Chinese_resume_data.csv')
     df = pd.read_csv(data_path)
     print(f"数据加载完成: {len(df)} 条记录")
     
