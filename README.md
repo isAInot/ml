@@ -44,7 +44,7 @@
 ```bash
 cd backend
 
-# 创建虚拟环境
+# 创建虚拟环境(可自行配置环境，下面给出示例)
 python -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
 
